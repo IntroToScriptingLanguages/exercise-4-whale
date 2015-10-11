@@ -3,11 +3,12 @@ jQuery(document).ready(function($) {
 
    if (isNaN(num))
    {
-     num = 142857;
+     num = 0;
    }
    console.log(num);
 
    $.get('/whale/txt/'+num+'.txt', function(txt) {
-     console.log(txt);
-   });
+     $('a').html(txt);
+     $('a').attr('href', '#'+(num+1));
+     });
 } );
