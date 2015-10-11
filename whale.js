@@ -6,4 +6,8 @@ jQuery(document).ready(function($) {
      num = 142857;
    }
    console.log(num);
+
+   $.get('/whale/txt/'+num+'.txt', function(txt) {
+     console.log(txt);
+   });
 } );
