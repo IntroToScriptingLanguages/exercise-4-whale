@@ -1,3 +1,4 @@
-jQuery(document).ready(function($)) {
-   console.log(location.hash);
-}
+jQuery(document).ready(function($) {
+   var num = parseInt(location.hash.substr(1));
+   console.log(num);
+} );
